@@ -41,6 +41,8 @@ public class SparkWebApp {
                 + "   <head>\n"
                 + "      <title>Home Page</title>\n"
                 + "   </head>\n"
+
+                + "      <body bgcolor=\"#00FFFF\">"
                 + "	\n"
                 + "   <body>\n"
                 + "<center>"
@@ -72,6 +74,7 @@ public class SparkWebApp {
                 + "   <head>\n"
                 + "      <title>Calculadora</title>\n"
                 + "   </head>\n"
+                + "      <body bgcolor=\"#00FFFF\">"
                 + "	\n"
                 + "<body>"
                 + "<center>"
@@ -106,16 +109,20 @@ public class SparkWebApp {
         float desviacion = data.getDesviacionWeb();
         String resultado = ("<!DOCTYPE html>"
                 + "<html>\n"
+                + "<center>"
                 + "   <head>\n"
                 + "      <title>Resultado</title>\n"
                 + "   </head>\n"
+                + "      <body bgcolor=\"#00FFFF\">"
                 + "	\n"
                 + "<body>"
                 + "<h2>Resultados</h2>"
                 + "<h2>Media Estadística:"+ media +"</h2>"
                 + "<h2>Desviación Estándar:" + desviacion + " </h2>"
                 + " <a href = \"/\" target = \"_self\">HomePage</a>\n"
+
                 + "</body>"
+                + "</center>\n"
                 + "</html>");
 
         return resultado;
